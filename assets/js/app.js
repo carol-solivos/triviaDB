@@ -1,3 +1,21 @@
+$('#btnSign').click(function(){
+	saveLocaStorage();
+	function saveLocaStorage() {
+		let user = $('#user').val();
+		var passVal = $('#passInput').val();
+		localStorage.setItem('user', user);
+		localStorage.setItem('passVal', passVal);
+	}
+
+	var passVal = $('#passInput').val();
+	// la contrasena no debe estar vacia, debe tener mas de 6 caracteres, no debe ser 123456
+	if (passVal !== '' && passVal.length >= 6 && passVal !== '123456') {
+		$('#login').hide();
+	} else {
+		alert('Ingrese contrasena valida.');
+	}
+});
+
 //https://opentdb.com/api.php?amount=10&category=18&difficulty=easy&type=boolean
 //https://opentdb.com/api.php?amount=10&category=18&difficulty=easy&type=multiple
 const container = document.getElementById('container');
