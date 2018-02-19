@@ -1,0 +1,31 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
+header {
+	height:5vh;
+}
+
+#container {
+	height:80vh;
+	padding-top: 20px;
+}
+
+footer {
+	height:5vh;
+}
+
+.btn {
+	padding: 10px 15px;
+	color: black;
+}
